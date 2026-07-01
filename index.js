@@ -1,4 +1,4 @@
- import fs from 'fs';
+//import fs from 'fs';
 
 // console.log("Hello");
 
@@ -22,7 +22,8 @@
 
 
 //Read a file 
-fs.readFile("demo.txt", "utf8", (err, data) => {
+const fs=require('fs');
+fs.readFile("demo.txt", (err, data) => {
     if (err) throw err;
 
     console.log(data);
