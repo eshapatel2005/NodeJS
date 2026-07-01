@@ -37,8 +37,15 @@
 // });
 
 //Rename a file 
-const fs=require('fs');
-fs.rename("demo.txt","demo1.txt",(err)=>{
-    if(err) throw err;
-    console.log("File renamed successfully");
+// const fs=require('fs');
+// fs.rename("demo.txt","demo1.txt",(err)=>{
+//     if(err) throw err;
+//     console.log("File renamed successfully");
+// });
+
+//Create a folder
+const fs = require("fs");
+fs.mkdir("MyFolder", (err) => {
+    if (err) throw err;
+    console.log("Folder created");
 });
