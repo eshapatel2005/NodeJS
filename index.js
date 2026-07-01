@@ -44,8 +44,15 @@
 // });
 
 //Create a folder
-const fs = require("fs");
-fs.mkdir("MyFolder", (err) => {
+// const fs = require("fs");
+// fs.mkdir("MyFolder", (err) => {
+//     if (err) throw err;
+//     console.log("Folder created");
+// });
+
+//Delete a folder 
+const fs=require('fs');
+fs.rmdir("MyFolder",(err)=>{
     if (err) throw err;
-    console.log("Folder created");
-});
+    console.log("Folder deleted successfully");
+})
