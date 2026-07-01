@@ -29,9 +29,16 @@
 // console.log("Program End");
 
 //Append data to a file
-const fs = require("fs");
-fs.appendFile("demo.txt", "\nWelcome!", (err) => {
-  if (err) throw err;
+// const fs = require("fs");
+// fs.appendFile("demo.txt", "\nWelcome!", (err) => {
+//   if (err) throw err;
 
-  console.log("Data added");
+//   console.log("Data added");
+// });
+
+//Rename a file 
+const fs=require('fs');
+fs.rename("demo.txt","demo1.txt",(err)=>{
+    if(err) throw err;
+    console.log("File renamed successfully");
 });
