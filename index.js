@@ -1,4 +1,4 @@
-// import fs from 'fs';
+ import fs from 'fs';
 
 // console.log("Hello");
 
@@ -13,19 +13,19 @@
 
 
 //Create a file
-const fs = require("fs");
-fs.writeFile("demo.txt", "Hello Node.js ...", (err) => {
-    if (err) throw err;
-
-    console.log("File created successfully");
-});
-
-
-
-// fs.readFile("demo.txt", "utf8", (err, data) => {
+// const fs = require("fs");
+// fs.writeFile("demo.txt", "Hello Node.js ...", (err) => {
 //     if (err) throw err;
 
-//     console.log(data);
+//     console.log("File created successfully");
 // });
 
-// console.log("Program End");
+
+//Read a file 
+fs.readFile("demo.txt", "utf8", (err, data) => {
+    if (err) throw err;
+
+    console.log(data);
+});
+
+console.log("Program End");
