@@ -51,8 +51,16 @@
 // });
 
 //Delete a folder 
+// const fs=require('fs');
+// fs.rmdir("MyFolder",(err)=>{
+//     if (err) throw err;
+//     console.log("Folder deleted successfully");
+// })
+
+//Check if a file exits
 const fs=require('fs');
-fs.rmdir("MyFolder",(err)=>{
-    if (err) throw err;
-    console.log("Folder deleted successfully");
-})
+if(fs.existsSync("demo1.txt")){
+    console.log("File exists");
+}else{
+    console.log("File not found");
+}
