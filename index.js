@@ -5,12 +5,10 @@
 // //Addition of 2 numbers
 // let a=5;
 // let b=10;
-// console.log("Addition : ",a+b); 
-
+// console.log("Addition : ",a+b);
 
 // //File System Module
 // const fs=require('fs');
-
 
 //Create a file
 // const fs = require("fs");
@@ -20,13 +18,20 @@
 //     console.log("File created successfully");
 // });
 
+//Read a file
+// const fs=require('fs');
+// fs.readFile("demo.txt", (err, data) => {
+//     if (err) throw err;
 
-//Read a file 
-const fs=require('fs');
-fs.readFile("demo.txt", (err, data) => {
-    if (err) throw err;
+//     console.log(data);
+// });
 
-    console.log(data);
+// console.log("Program End");
+
+//Append data to a file
+const fs = require("fs");
+fs.appendFile("demo.txt", "\nWelcome!", (err) => {
+  if (err) throw err;
+
+  console.log("Data added");
 });
-
-console.log("Program End");
