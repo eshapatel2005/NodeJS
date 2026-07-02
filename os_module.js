@@ -34,4 +34,7 @@ const os=require('os');
 //console.log(os.uptime());
 
 //User Information
-console.log(os.userInfo());
+//console.log(os.userInfo());
+
+//End-of-Line Character
+console.log(os.EOL);
