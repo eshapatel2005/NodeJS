@@ -19,4 +19,7 @@ const os=require('os');
 //console.log(os.tmpdir());
 
 //Total Memory
-console.log(os.totalmem());
+//console.log(os.totalmem());
+
+//Total memory in GB
+console.log(os.totalmem() / (1024 * 1024 * 1024));
