@@ -7,4 +7,7 @@ const os=require('os');
 //console.log(os.platform());
 
 //CPU Architecture
-console.log(os.arch());
+//console.log(os.arch());
+
+//Host Name
+console.log(os.hostname());
