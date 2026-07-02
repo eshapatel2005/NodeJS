@@ -16,4 +16,7 @@ const os=require('os');
 //console.log(os.homedir());
 
 //Temporary Directory
-console.log(os.tmpdir());
+//console.log(os.tmpdir());
+
+//Total Memory
+console.log(os.totalmem());
