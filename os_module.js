@@ -4,4 +4,7 @@ const os=require('os');
 //console.log(os.type());
 
 //Operating system platform
-console.log(os.platform());
+//console.log(os.platform());
+
+//CPU Architecture
+console.log(os.arch());
