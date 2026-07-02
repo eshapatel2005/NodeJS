@@ -28,4 +28,7 @@ const os=require('os');
 //console.log(os.freemem());
 
 //CPU Information
-console.log(os.cpus());
+//console.log(os.cpus());
+
+//System Uptime
+console.log(os.uptime());
