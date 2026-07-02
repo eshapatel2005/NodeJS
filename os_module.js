@@ -25,4 +25,7 @@ const os=require('os');
 //console.log(os.totalmem() / (1024 * 1024 * 1024));
 
 //Free Memory 
-console.log(os.freemem());
+//console.log(os.freemem());
+
+//CPU Information
+console.log(os.cpus());
