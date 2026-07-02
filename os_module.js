@@ -31,4 +31,7 @@ const os=require('os');
 //console.log(os.cpus());
 
 //System Uptime
-console.log(os.uptime());
+//console.log(os.uptime());
+
+//User Information
+console.log(os.userInfo());
