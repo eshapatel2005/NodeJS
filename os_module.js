@@ -13,4 +13,7 @@ const os=require('os');
 //console.log(os.hostname());
 
 //Home Directory
-console.log(os.homedir());
+//console.log(os.homedir());
+
+//Temporary Directory
+console.log(os.tmpdir());
