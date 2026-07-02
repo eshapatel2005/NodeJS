@@ -10,4 +10,7 @@ const os=require('os');
 //console.log(os.arch());
 
 //Host Name
-console.log(os.hostname());
+//console.log(os.hostname());
+
+//Home Directory
+console.log(os.homedir());
